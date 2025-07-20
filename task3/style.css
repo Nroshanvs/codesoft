@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://as2.ftcdn.net/jpg/02/62/17/55/1000_F_262175537_RYintvlX3CLWKwtcxIVe2akFZnGoEfiV.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background-color: #2196f3;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+  background-color: #e0f7fa;
+  color: black;
+  font-size: 32px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  background-color: #1976d2;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1565c0;
+}
+
+.button.zero {
+  grid-column: span 2;
+}
+
+.equals {
+  background-color: #00c853;
+}
+
+.clear {
+  background-color: #d32f2f;
+}
